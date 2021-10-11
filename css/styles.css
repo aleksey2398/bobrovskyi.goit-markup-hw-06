@@ -196,12 +196,12 @@ bottom: -33px;
   color: var(--blue);
 }
 .icon-contacts{
-  fill:currentColor;
-  margin-right: 10px;
+fill:grey;
+margin-right: 10px;
 }
 .icon-contacts:hover,
 .icon-contacts:focus {
-  fill: currentColor;
+  fill:var(--blue);
 }
 
 .header-tel-svg{
@@ -330,7 +330,7 @@ bottom: -33px;
  }
 
 .content-box-about.list{
- flex-basis:calc((100% - 120%px) / 4);
+ flex-basis:calc((100% - 120%) / 4);
  margin-left: 30px;
  margin-top: 30px;
  }  
@@ -439,11 +439,11 @@ justify-content:center;
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
-fill:white;
+fill: var(--white);
 transition: fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-delay: 0;
+
 }
 
 .section-team {
@@ -592,7 +592,7 @@ fill: #AFB1B8;
 
 /*Присоединяйтесь*/
 
-.footer-block{
+.footer-form{
  margin-left: 70px;
  display: inline-block;
  width: calc((100% - 30px) / 2);
@@ -830,8 +830,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.close-btn:hover,
-.close-btn:focus {
+.btn-close:hover,
+.btn-close:focus {
 fill: var(--blue);
 }
 
@@ -843,7 +843,6 @@ border-color: var(--blue);
 .is-hidden {
  opacity: 0;
  visibility: hidden;
- pointer-events: none;
 }
 .modal-form{
 display: flex;
@@ -936,11 +935,10 @@ font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 24px;
-margin-bottom: 30px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--black);
+margin-bottom: 0px;
 }
 .modal-form-checkbox {
  position: relative;
